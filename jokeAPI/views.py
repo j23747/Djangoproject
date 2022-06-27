@@ -2,18 +2,21 @@ from django.shortcuts import render
 import requests
 from django.views.generic import TemplateView
 from . import views
+# from . service import get_jokes
 
-# Fetch API data & display function from the joke API
-
-
-# def  index(request):
-#     response=request.get('https://official-joke-api.appspot.com/jokes/random').json()
-#     return render(request, 'index.html', {'response' :response})
+# Getting the Jokes and display them in HTML template
 
 
-class GetJoke(TemplateView):
+
+class GetJokes(TemplateView):
     template_name = 'jokes.html'
     
     def get_context_data(self, *args, **kwargs):
         pass
+
+        # context = {
+        #     'jokes' : get_jokes()
+        # }    
+
+        # return context
 
