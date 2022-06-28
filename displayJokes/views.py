@@ -12,7 +12,7 @@ def jokes(request):
 
     jokes = response.json()
 
-    return render(request, 'display_jokes.html')
+    return render(request, 'display_jokes.html', {'jokes': jokes})
     pass
 
 
