@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import requests
 
+
+# get the data from rest API
 def jokes(request):
     response = requests.get('https://api.chucknorris.io/jokes/random/')
 
@@ -9,9 +11,8 @@ def jokes(request):
     #Converting the response data into json
 
     jokes = response.json()
-    print(jokes)
 
-    return HttpResponse("jokes")
+    return render(request, 'display_jokes.html')
     pass
 
 
