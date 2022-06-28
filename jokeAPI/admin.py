@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+# Register JokeAPI in the admin
+
+# from .models import jokeAPI
+
+# admin.site.register(jokeAPI)

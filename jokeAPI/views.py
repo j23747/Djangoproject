@@ -8,15 +8,15 @@ from . import views
 
 
 
-class GetJokes(TemplateView):
-    template_name = 'jokes.html'
+# class GetJokes(TemplateView):
+#     template_name = 'jokes.html'
     
-    def get_context_data(self, *args, **kwargs):
-        pass
+#     def get_context_data(self, *args, **kwargs):
+#         pass
 
-        # context = {
-        #     'jokes' : get_jokes()
-        # }    
+#         # context = {
+#         #     'jokes' : get_jokes()
+#         # }    
 
-        # return context
+#         # return context
 
