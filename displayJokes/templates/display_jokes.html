@@ -13,18 +13,12 @@
       <div class="container-fluid p-2 bg-primary text-white text-center">
           <h1> Random Jokes</h1>
       </div>
+      
       <div class="container mt-5">
-        <h2>Here's your jokes</h2>
-            <tbody>
-                {% for joke in jokes %}
+        <h2>Here's your joke</h2>
                 <p>
-                {{ joke.setup }}
-                <!-- {{ joke.name }} -->
-                {{ joke.punchline }}
+                {{ jokes.value }}
                 </p>
-
-                {% endfor %}    
-            </tbody>
    </div>
    </body>
 </html>
