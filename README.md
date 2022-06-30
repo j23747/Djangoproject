@@ -1,8 +1,9 @@
 # Django Project
-## Django project pulling data from Chuck Norris Joke Api.
+Django project pulling data from Chuck Norris Joke Api.
 
-## Visit live website
 ## Requirements
+ - Python3 installed
+
 ## Please read the requirements.txt file
 
 ## Getting Started
@@ -30,6 +31,8 @@ Then go to http://127.0.0.1:8000 in your browser
 
 
 ### Project snapshot
+
+- To get a new joke, refresh the page.
 
 ![plot](./snapshot.png)
 
